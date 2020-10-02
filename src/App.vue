@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Subreddits />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Subreddits from './components/Subreddits';
 
 export default {
-  name: 'App',
+  name: "App",
+  data() {
+    return {
+
+    }
+  },
+  
   components: {
-    HelloWorld
-  }
-}
+    Subreddits,
+  },
+};
 </script>
 
-<style>
+<style scoped lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  width: 100%;
 }
 </style>
